@@ -1,17 +1,44 @@
+* {
+  box-sizing: border-box;
+}
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  background-color: aquamarine;
+}
+body {
+  color: mediumslateblue;
+  font-size: 2rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main-container {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid mediumorchid;
+  border-radius: 5px;
+  background-color: black;
+}
+.main-container iframe {
+  max-width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-form {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 4px solid mediumorchid;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: medium;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -24,15 +51,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-container {
+  width: 500px;
+  color: aqua;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
